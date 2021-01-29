@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator</title>
+    </head>
+    <body onload="check()">
+        <div class="maindiv">
+    	<div id="box">
+        <h1>Simple Interest Calculator</h1>
+        <table><!--table structure is used for all elemets of the form to keep it aligned-->
+        <tr>
+            <td>Amount <td><input type="text"  id="principal" onchange="validate()" >  <br/>
+        <tr>
+            <td>Rate <td> <input type="range" min="1" max="20" value="10.25" step="0.25"  id="rate" oninput="rangeShow()"><!--ranhe silder to choose interest rate-->
+            <span id="rval">10.25%</span> <br/><!--this sapn has been used to show range sliders value-->
+        <tr>
+            <td> No. of Years <td><select id="years"><!--option list is used to choose years for yousers-->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>  <br/>
+        <tr>
+         	<td colspan="2">
+                <button onclick="compute()">Compute Interest</button><!--compute function will calculate interest and will display output-->
+        <tr>
+            <td  colspan="2"><tr>
+            <td  colspan="2"><span id="result" align="left"></span><br> <!--this sapn has been used to show all calulation -->
+                
+        </table>
+        <footer> 
+            <span >&#169;Everyone Can Get Rich</span><!--footer for the form-->
+          </footer>
+        </div>
+        </div>
+    </body>
+</html>

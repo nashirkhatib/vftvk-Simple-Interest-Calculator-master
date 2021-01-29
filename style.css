@@ -1,0 +1,48 @@
+body {background-color:black;} /*sets backgroung color to black*/
+h1								/*sets heading color to grey and font  										family to vardana*/
+	{
+		color:grey;
+		font-family: Verdana;
+	}
+.maindiv 						/*main Div's styling properties*/
+{
+	background-color: white;
+	color: black;
+	width: 500px;
+	padding: 20px;
+	border-radius: 25px;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+#box
+{
+	position: relative;
+	text-align: center;
+	justify-content: center;
+		
+}
+#result 						/*output calulation  display's span 										properties*/
+{
+	position: relative;
+	left:0px;
+	top: 0px;
+	text-align: left;
+	justify-content: left;
+	margin: auto;
+	border-radius: 25px;
+}
+table    						/*table styling properties*/
+{
+ 
+ text-align: left;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+footer 							/*footer styling properties*/
+{
+text-align: left;
+margin-left: 3%;
+}
+
